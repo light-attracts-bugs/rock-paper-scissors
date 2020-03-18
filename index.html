@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header class="container-fluid">
+    <!-- <img src="https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=MW68w59E" alt="" > -->
+    <div class="row">
+      <div class="col-4 img-col" id="pImg">
+        <img class="img-fluid" src="" alt="" id="left-img">
+      </div>
+      <div class="col-4 img-col" id="rpc">
+        <img class="img-fluid"
+          src="https://www.esquireme.com/sites/default/files/styles/full_img/public/images/2017/05/29/rock_paper_scissors__2x.png?itok=MW68w59E"
+          alt="" id="middle-img">
+      </div>
+      <div class="col-4 img-col" id="cImg">
+        <img class="img-fluid" src="" alt="" id="right-img">
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 rock" onclick="play('rock')">
+        <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2018/10/01_Balanced_Naturally-Gorgeous-Rock-Formations-Around-the-World_313408829_NaughtyNut-760x506.jpg" alt="" class="img-fluid">
+        <button type="button" class="btn btn-primary">Rock</button>
+      </div>
+      <div class="col-4 paper" onclick="play('paper')">
+        <img src="https://www.indexbraille.com/getmedia/205d81da-37a4-46c8-a669-9508730412c4/paper_fan-folded_16x9.jpg?width=960" alt="" class="img-fluid">
+        <button type="button" class="btn btn-primary">Paper</button>
+      </div>
+      <div class="col-4 scissors" onclick="play('scissors')">
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/23/11/scissors-1297454_1280.png" alt="" class="img-fluid">
+        <button type="button" class="btn btn-primary">Scissors</button>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 id="wins">Wins: 0</h1>
+    <h1 id="losses">Losses: 0</h1>
+    <h1 id="ties">Ties: 0</h1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
